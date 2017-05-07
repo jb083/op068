@@ -1,0 +1,66 @@
+\documentclass[lualatex,a4paper,openany]{bxjsbook}
+\usepackage{amsmath,amssymb,mathrsfs,braket}
+% \usepackage{amsthm,amscd} %定理環境, 可換図式
+% \usepackage{ascmac} %screen, itembox環境
+\usepackage{graphicx,xcolor}
+% \usepackage{fancyhdr,lastpage} %ヘッダー/フッター操作
+\usepackage{makeidx} %索引
+\usepackage{hyperref} %ハイパーリンク
+% \hypersetup{colorlinks=true,linkcolor=blue,citecolor=green}
+
+% 和文フォント
+% \usepackage[no-math,ipaex]{luatexja-preset} % IPAexフォント
+\usepackage[no-math]{luatexja-fontspec} %Source Han フォント
+	\setmainjfont{SourceHanSerifJP}
+	\setsansjfont{SourceHanSansJP}
+\ltjsetparameter{jacharrange={-2}} % 非ASCII文字がすべて和文と解釈されるのを防ぐ
+
+% 欧文フォント
+\setmainfont[Ligatures=TeX]{SourceSerifPro}
+% \setmainfont[Ligatures=TeX]{XITS}
+% \setmainfont[Ligatures=TeX]{EB Garamond}
+% \setsansfont[Ligatures=TeX]{TeX Gyre Heros} % TeX Gyre Heros
+% \setsansfont[Ligatures=TeX]{FreeSans} % Gnu Free Font
+% \setsansfont[Ligatures=TeX]{Linux Biolinum O} % Libertine/Biolinum
+\setsansfont[Ligatures=TeX]{SourceSansPro}
+% \setmonofont[Ligatures=TeX]{Inconsolatazi4}
+\setmonofont[Ligatures=TeX]{SourceCodePro}
+
+% 索引を作成
+\makeindex
+
+% jsbook用の設定
+\setlength{\textwidth}{\fullwidth} %本文領域を最大化 (余白を小さくする)
+\setlength{\evensidemargin}{\oddsidemargin}
+
+% MusiXTeX用設定
+\usepackage{musixtex}
+\nobarnumbers %小節番号なし
+\newcounter{mycounter} % カウンタの宣言
+\setcounter{mycounter}{0} % カウンタの初期化
+\newcommand{\useMycounter}[1][]{\refstepcounter{mycounter}{#1}譜例{\themycounter}: }
+\newcommand{\musicbegin}{\vspace*{5truemm}\begin{music}}
+\newcommand{\musicend}[2]{\end{music}\begin{center}\useMycounter[\label{#1}]{#2}\end{center}}
+
+% 文書データ
+\title{ブラームス: 交響曲第1番}
+\author{H.~S.}
+\date{2017.05.07-}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\input{./preface.tex}
+
+\input{./history.tex}
+
+\input{./structure.tex}
+
+\input{./performances.tex}
+
+\printindex
+
+\end{document}
