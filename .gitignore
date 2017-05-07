@@ -178,3 +178,7 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+# musixtex
+*.mx1
+*.mx2
