@@ -35,7 +35,9 @@
 
 % MusiXTeX用設定
 \usepackage{musixtex}
+\input{musixadd.tex}
 \nobarnumbers %小節番号なし
+\smallmusicsize %楽譜のサイズを小さく
 \newcounter{mycounter} % カウンタの宣言
 \setcounter{mycounter}{0} % カウンタの初期化
 \newcommand{\useMycounter}[1][]{\refstepcounter{mycounter}{#1}譜例{\themycounter}: }
