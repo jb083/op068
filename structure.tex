@@ -5,13 +5,52 @@
 
 \section{第1楽章}
 
+\musicbegin
+	\startbarno=42
+	\systemnumbers
+	\def\writebarno{\llap{\the\barno\barnoadd}}%
+	\def\raisebarno{2\internote}%
+	\def\shiftbarno{1.3\Interligne}%
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{6}{8}}%  % 拍子は8分の6拍子
+	\startextract%
+		%(1)
+		\notes\lpz{C}\cu{C}\ds\ds|\ds\ds\ibsluru{1}{e}\cu{e}\enotes
+		\Notes\isluru{0}{c}\qlp{c}|\qu{g}\enotes
+		\notes|\tsslur{1}{g}\cl{l}\enotes
+		\bar
+		%(2)
+		\NOTes\tslur{0}{c}\qlp{c}|\isluru{1}{n}\qlp{n}\enotes
+		\Notes\sh{c}\qlp{c}|\tslur{1}{n}\ql{n}\enotes
+		\Notes|\na{l}\isluru{1}{l}\cl{l}\enotes
+		\bar
+		%(3)
+		\Notes\itieu{0}{d}\qlp{d}|\tslur{1}{n}\ql{n}\ds\enotes
+		\Notes\ibl{0}{d}{-3}\ttie{0}\qbp{0}{d}\nbbl{0}\na{c}\isluru{0}{c}\qb{0}{c}\na{b}\qb{0}{b}\tbl{0}\na{a}\qb{0}{a}|\isluru{1}{o}\usf{o}\qlp{o}\enotes
+		\bar
+		%(4)
+		\notes\na{b}\tslur{0}{b}\upz{b}\cl{b}\ds|\tslur{1}{o}\ql{o}\enotes
+		\notes\ds|\upz{m}\cl{m}\enotes
+		\Notes\qp|\upz{k}\ql{k}\enotes
+		\notes\lpz{J}\cu{J}|\upz{j}\cl{j}\enotes
+		\bar
+		%(5)
+		\notes\lpz{G}\cu{G}\ds|\na{i}\upz{i}\cl{i}\ds\enotes
+	\zendextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{1-42}{第1楽章42小節目から}
+
+
+
 \section{第2楽章}
 
 \section{第3楽章}
 
 \musicbegin
 	\def\nbinstruments{1}%   % パート数 2
-	\setstaffs{1}{2}%        % 下から2番目は2段
+	\setstaffs{1}{2}%        % 下から1番目は2段
 	\setclef{1}{6000}%       % 下から1番目はへ音記号
 	\generalsignature{-4}%    % 調号は正の値のときシャープの数
 	\generalmeter{\meterfrac{2}{4}}%  % 拍子は8分の6拍子
@@ -48,9 +87,8 @@
 	\endextract % 頭にzをつけると最後に小節線を表示しない
 \musicend{3-1}{第3楽章冒頭}
 
-第3楽章冒頭を譜例\ref{3-1}に示す. クラリネットで提示される$2$拍子の優雅な旋律だが,
-ブラームスらしく$5$小節を単位とする変則的な構造を取る.
-しかも, $2$拍子が$5$小節続くのではなく, $2 + 2 + 3 + 3$という変拍子である. 
+第3楽章冒頭を譜例\ref{3-1}に示す. クラリネットで提示される優雅な旋律だが, ブラームスらしく$5$小節を単位とする変則的な構造を取る.
+しかも, $2$拍子が$5$小節続くのではなく, $2 + 2 + 3 + 3$という変拍子である.
 
 
 \section{第4楽章}
