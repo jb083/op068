@@ -35,6 +35,18 @@
 \setlength{\textwidth}{\fullwidth} %本文領域を最大化 (余白を小さくする)
 \setlength{\evensidemargin}{\oddsidemargin}
 
+
+% 図表に通し番号を振る
+\usepackage{remreset}
+\makeatletter
+	\@removefromreset{figure}{chapter}
+	\def\thefigure{\arabic{figure}}
+	\@removefromreset{table}{chapter}
+	\def\thetable{\arabic{table}}
+	\@removefromreset{equation}{chapter}
+	\def\theequation{\arabic{equation}}
+\makeatother
+
 % MusiXTeX用設定
 \usepackage{musixtex}
 \input{musixadd.tex}
@@ -44,7 +56,7 @@
 \setcounter{mycounter}{0} % カウンタの初期化
 \newcommand{\useMycounter}[1][]{\refstepcounter{mycounter}{#1}譜例{\themycounter}: }
 \newcommand{\musicbegin}{\vspace*{5truemm}\begin{music}}
-\newcommand{\musicend}[2]{\end{music}\begin{center}\useMycounter[\label{#1}]{#2}\end{center}}
+\newcommand{\musicend}[2]{\end{music}\begin{center}{\small\useMycounter[\label{#1}]{#2}}\end{center}}
 
 % 文書データ
 \title{ブラームス: 交響曲第1番}
