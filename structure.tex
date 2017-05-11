@@ -40,7 +40,7 @@
 		%(5)
 		\notes\lpz{G}\cu{G}\ds|\na{i}\upz{i}\cl{i}\ds\enotes
 	\zendextract % 頭にzをつけると最後に小節線を表示しない
-\musicend{1-42}{第1楽章42小節目から}
+\musicend{1-42}{第1楽章第42小節から}
 
 
 
@@ -110,5 +110,59 @@
 第3楽章冒頭を譜例\ref{3-1}に示す. クラリネットで提示される優雅な旋律だが, ブラームスらしく$5$小節を単位とする変則的な構造を取る.
 しかも, $2$拍子が$5$小節続くのではなく, $2 + 2 + 3 + 3$という変拍子である.
 
+
+\begin{music}
+	\setlength{\textwidth}{45truemm}
+	\startbarno=45
+	\systemnumbers
+	\def\writebarno{\llap{\the\barno\barnoadd}}%
+	\def\raisebarno{2\internote}%
+	\def\shiftbarno{1.3\Interligne}%
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{-4}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{2}{4}}%  % 拍子は8分の6拍子
+	\startextract%
+	% \startpiece
+		%(1)
+		\Notes\uptext{\boxit{B}}\qp\ds\isluru{1}{j}\cl{j}\enotes
+		\bar
+		%(2)
+		\Notes\ibu{0}{i}{-2}\na{i}\qb{0}{i}\qb{0}{h}\qb{0}{g}\tbu{0}\curve 522\tbsluru{1}{l}\qb{0}{f}\enotes
+		\bar
+		%(3)
+		\NOtes\ibl{0}{i}{+2}\na{i}\isluru{1}{i}\qbp{0}{i}\enotes
+		\notes\tbbl{0}\tbl{0}\tslur{1}{k}\qb{0}{k}\enotes
+		\notes\ibbl{0}{j}{+2}\isluru{2}{j}\qb{0}{jon}\tbbl{0}\tbl{0}\curve512\tslur{2}{m}\isluru{1}{m}\qb{0}{m}\enotes
+		\bar
+		%(4)
+		\Notes\ibl{0}{l}{-2}\na{l}\qb{0}{l}\qb{0}{k}\qb{0}{j}\tbl{0}\tbsluru{1}{i}\fl{i}\qb{0}{i}\enotes
+		\bar
+		%(5)
+		\NOtes\ibl{0}{l}{+2}\fl{l}\isluru{1}{l}\qbp{0}{l}\enotes
+		\notes\tbbl{0}\tbl{0}\tslur{1}{n}\fl{n}\qb{0}{n}\enotes
+		\notes\ibbl{0}{j}{+2}\isluru{2}{m}\qb{0}{mrq}\tbbl{0}\tbl{0}\curve511\tslur{2}{p}\qb{0}{p}\enotes
+		\bar
+		% \alaligne
+		%(6)
+		\NOtes\zq{m}\ql{o}\enotes
+		\Notes\ibl{0}{l}{-2}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\tbl{0}\na{k}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		\bar
+		%(7)
+		\notes\ibbl{0}{l}{0}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\na{k}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		\notes\ibbl{0}{l}{0}\zq{l}\isluru{1}{n}\qb{0}{n}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{l}\tslur{1}{n}\qb{0}{n}\enotes
+		\bar
+		%(8)
+		\NOtes\zq{m}\ql{o}\enotes
+		\Notes\ibl{0}{l}{-2}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\tbl{0}\na{k}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		\bar
+		%(9)
+		\notes\ibbl{0}{l}{0}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\na{k}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		\notes\ibbu{0}{l}{-4}\zcl{l}\ibsluru{1}{n}\qb{0}{n}\qb{0}{l}\enotes
+		\notes\raise-2\Interligne\rlap\ds\na{i}\qb{0}{i}\tbu{0}\tbsluru{1}{k}\qb{0}{j}\enotes
+	\endextract
+	% \endpiece
+\musicend{3-45}{第3楽章第45小節から}
 
 \section{第4楽章}
