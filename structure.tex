@@ -107,22 +107,96 @@
 	\endextract % 頭にzをつけると最後に小節線を表示しない
 \musicend{3-1}{第3楽章冒頭}
 
-第3楽章冒頭を譜例\ref{3-1}に示す. クラリネットで提示される優雅な旋律だが, ブラームスらしく$5$小節を単位とする変則的な構造を取る.
-しかも, $2$拍子が$5$小節続くのではなく, $2 + 2 + 3 + 3$という変拍子である.
+第3楽章冒頭はまずチェロのピッチカートに乗ってクラリネットが優雅な旋律を提示する (譜例\ref{3-1}).
+ブラームスらしく$5$小節を単位とする変則的な構造を取る. しかも, $2$拍子が$5$小節続くのではなく, $2 + 2 + 3 + 3$という変拍子である.
+続いて第11小節からフルートとファゴットが加わって下降音型を中心とする第2句を奏でる (譜例\ref{3-11}).
+こちらは冒頭のクラリネット (第1句) と異なり4+4小節の標準的な形である. 第1句と第2句がこの楽章の基本主題を構成する.
 
+\musicbegin
+	\startbarno=11
+	\systemnumbers
+	\def\writebarno{\llap{\the\barno\barnoadd}}%
+	\def\raisebarno{2\internote}%
+	\def\shiftbarno{1.3\Interligne}%
+	\def\nbinstruments{1}%   % パート数
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{-4}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterfrac{2}{4}}%  % 拍子
+	\startextract%
+	\NOtes\ibl{0}{l}{-2}\zqp{l}\isluru{1}{n}\qb{0}{n}\enotes
+	\notes\tbbl{0}\na{k}\zq{k}\qb{0}{m}\enotes
+	\NOtes\zqp{j}\qbp{0}{l}\enotes
+	\notes\tbbl{0}\tbl{0}\zq{i}\qb{0}{k}\enotes
+	\bar
+	\NOtes\ibu{0}{h}{-2}\zqp{h}\qb{0}{j}\enotes
+	\notes\tbbu{0}\zq{g}\qb{0}{i}\enotes
+	\NOtes\zqp{f}\qbp{0}{h}\enotes
+	\notes\tbbu{0}\tbu{0}\zq{e}\tbsluru{1}{l}\qb{0}{g}\enotes
+	\bar
+	\NOtes\ibl{0}{k}{-2}\na{k}\zqp{k}\isluru{1}{m}\qb{0}{m}\enotes
+	\notes\tbbl{0}\zq{j}\qb{0}{l}\enotes
+	\NOtes\zqp{i}\qbp{0}{k}\enotes
+	\notes\tbbl{0}\tbl{0}\zq{h}\qb{0}{j}\enotes
+	\bar
+	\NOtes\ibu{0}{h}{-2}\zqp{g}\qb{0}{i}\enotes
+	\notes\tbbu{0}\zq{f}\qb{0}{h}\enotes
+	\NOtes\qbp{0}{g}\enotes
+	\notes\tbbu{0}\tbu{0}\tbsluru{1}{k}\qb{0}{f}\enotes
+	\bar
+	\NOtes\zhl{g}\ibu{0}{l}{-1}\ibsluru{1}{l}\qb{0}{l}\enotes
+	\notes\tbbu{0}\qb{0}{i}\enotes
+	\NOtes\qbp{0}{g}\enotes
+	\notes\tbbu{0}\tbu{0}\tbsluru{1}{j}\qb{0}{j}\enotes
+	\bar
+	\NOtes\ibsluru{3}{i}\itieu{2}{i}\lqu{i}\ibl{0}{h}{-1}\ibslurd{1}{h}\qb{0}{h}\enotes
+	\notes\tbbl{0}\qb{0}{f}\enotes
+	\NOtes\na{d}\zqbp{0}{d}\ibu{1}{i}{+1}\ttie{2}\qbp{1}{i}\enotes
+	\notes\tbbl{0}\tbl{0}\tbslurd{1}{h}\zqb{0}{h}\tbbu{1}\tbu{1}\tbsluru{3}{j}\qb{1}{j}\enotes
+	\endextract
+\musicend{3-11}{第3楽章第11小節から}
+
+第19小節から, やや拡大された形で両旋律が確保される. ここで依然として第1句は9小節単位という変則的な形を,
+第2句は4小節単位の標準的な形を保っていることは注目に値する.
+また, 拡大部分である第29小節から第31小節にかけて, Vn2にこの曲の基本動機xがさりげなく登場している (譜例\ref{3-29}) ことにも注意したい.
+
+
+\musicbegin
+	\startbarno=29
+	\systemnumbers
+	\def\writebarno{\llap{\the\barno\barnoadd}}%
+	\def\raisebarno{2\internote}%
+	\def\shiftbarno{1.3\Interligne}%
+	\def\nbinstruments{1}%   % パート数
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{-4}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterfrac{2}{4}}%  % 拍子
+	\startextract%
+	\Notes\isluru{1}{i}\itieu{2}{i}\ql{i}\enotes
+	\bar
+	\Notes\ttie{2}\ql{i}\na{i}\ql{i}\enotes
+	\bar
+	\Notes\ql{j}\ql{k}\enotes
+	\bar
+	\notes\ibl{0}{l}{-2}\na{k}\qb{0}{k}\curve 543\tslur{1}{j}\qb{0}{j}\isluru{1}{k}\upz{i}\qb{0}{i}\tbl{0}\tslur{1}{j}\upz{h}\qb{0}{h}\enotes
+	\endextract
+\musicend{3-29}{第3楽章第29小節2拍目からのVn2}
+
+第45小節でヘ短調に落ち込むと, クラリネット, 次いでフルートとオーボエに新しいリズムが出る (譜例\ref{3-45}) が,
+これは前半は第2句, 後半は第1句に基づく経過句である.
 
 \begin{music}
-	\setlength{\textwidth}{45truemm}
 	\startbarno=45
 	\systemnumbers
 	\def\writebarno{\llap{\the\barno\barnoadd}}%
 	\def\raisebarno{2\internote}%
 	\def\shiftbarno{1.3\Interligne}%
-	\def\nbinstruments{1}%   % パート数 2
+	\def\nbinstruments{1}%   % パート数
 	\setstaffs{1}{1}%        % 下から1番目は2段
 	\setclef{1}{0000}%       % 下から1番目はへ音記号
 	\generalsignature{-4}%    % 調号は正の値のときシャープの数
-	\generalmeter{\meterfrac{2}{4}}%  % 拍子は8分の6拍子
+	% \generalmeter{\meterfrac{2}{4}}%  % 拍子
 	\startextract%
 	% \startpiece
 		%(1)
@@ -164,5 +238,9 @@
 	\endextract
 	% \endpiece
 \musicend{3-45}{第3楽章第45小節から}
+
+第62小節で変イ長調に戻ると第1句を再現するが, これはあっさりと流して遠隔調であるロ長調の中間部へと続く.
+ここで第65小節からの木管楽器の動きが第4楽章の第58小節や第295小節を思い出させる, と言うと穿ちすぎだろうか
+(第28小節および譜例\ref{3-29}に関する上の記述と比較せよ). 
 
 \section{第4楽章}
