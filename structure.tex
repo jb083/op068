@@ -200,13 +200,13 @@
 	\startextract%
 	% \startpiece
 		%(1)
-		\Notes\uptext{\boxit{B}}\qp\ds\isluru{1}{j}\cl{j}\enotes
+		\Notes\ds\isluru{1}{j}\cl{j}\enotes
 		\bar
 		%(2)
 		\Notes\ibu{0}{i}{-2}\na{i}\qb{0}{i}\qb{0}{h}\qb{0}{g}\tbu{0}\curve 522\tbsluru{1}{l}\qb{0}{f}\enotes
 		\bar
 		%(3)
-		\NOtes\ibl{0}{i}{+2}\na{i}\isluru{1}{i}\qbp{0}{i}\enotes
+		\Notes\ibl{0}{i}{+2}\na{i}\isluru{1}{i}\qbp{0}{i}\enotes
 		\notes\tbbl{0}\tbl{0}\tslur{1}{k}\qb{0}{k}\enotes
 		\notes\ibbl{0}{j}{+2}\isluru{2}{j}\qb{0}{jon}\tbbl{0}\tbl{0}\curve512\tslur{2}{m}\isluru{1}{m}\qb{0}{m}\enotes
 		\bar
@@ -220,27 +220,62 @@
 		\bar
 		% \alaligne
 		%(6)
-		\NOtes\zq{m}\ql{o}\enotes
+		\Notes\zq{m}\ql{o}\enotes
 		\Notes\ibl{0}{l}{-2}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\tbl{0}\na{k}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
 		\bar
 		%(7)
 		\notes\ibbl{0}{l}{0}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\na{k}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
 		\notes\ibbl{0}{l}{0}\zq{l}\isluru{1}{n}\qb{0}{n}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{l}\tslur{1}{n}\qb{0}{n}\enotes
-		\bar
-		%(8)
-		\NOtes\zq{m}\ql{o}\enotes
-		\Notes\ibl{0}{l}{-2}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\tbl{0}\na{k}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
-		\bar
-		%(9)
-		\notes\ibbl{0}{l}{0}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\na{k}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
-		\notes\ibbu{0}{l}{-4}\zcl{l}\ibsluru{1}{n}\qb{0}{n}\qb{0}{l}\enotes
-		\notes\raise-2\Interligne\rlap\ds\na{i}\qb{0}{i}\tbu{0}\tbsluru{1}{k}\qb{0}{j}\enotes
+		% \bar
+		% %(8)
+		% \NOtes\zq{m}\ql{o}\enotes
+		% \Notes\ibl{0}{l}{-2}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\tbl{0}\na{k}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		% \bar
+		% %(9)
+		% \notes\ibbl{0}{l}{0}\na{l}\zq{l}\isluru{1}{n}\qb{0}{n}\na{k}\zq{k}\qb{0}{m}\zq{j}\qb{0}{l}\tbl{0}\zq{k}\tslur{1}{m}\qb{0}{m}\enotes
+		% \notes\ibbu{0}{l}{-4}\zcl{l}\ibsluru{1}{n}\qb{0}{n}\qb{0}{l}\enotes
+		% \notes\raise-2\Interligne\rlap\ds\na{i}\qb{0}{i}\tbu{0}\tbsluru{1}{k}\qb{0}{j}\enotes
 	\endextract
 	% \endpiece
-\musicend{3-45}{第3楽章第45小節から}
+\musicend{3-45}{第3楽章第45小節2拍目から}
 
 第62小節で変イ長調に戻ると第1句を再現するが, これはあっさりと流して遠隔調であるロ長調の中間部へと続く.
-ここで第65小節からの木管楽器の動きが第4楽章の第58小節や第295小節を思い出させる, と言うと穿ちすぎだろうか
-(第3楽章第28小節からの木管および譜例\ref{3-29}に関する上の記述と比較せよ). 
+ここで第65小節からの木管楽器の動きが第4楽章の第58小節や第295小節を思い出させる, と言うと穿ちすぎだろうか.
+その解釈に立ってこの箇所を第3楽章第28小節からの木管および譜例\ref{3-29}に関する上の記述と比較すると,
+主部Aにおいて3回演奏されるこの主要主題は, 最初 (第1小節から) は含みのない形で提示されるが,
+2回目 (第19小節から) は第1楽章に, 3回目 (第62小節から) は第4楽章に寄せている, ということになる.
+中間部Bが第1楽章の追憶に捧げられ, 再現部A'が第4楽章の準備段階となっていることを踏まえると, この見方は如何にもありそうに思える.
+
+\musicbegin
+	\shosetu{71}
+	\def\nbinstruments{1}%   % パート数
+	% \setstaffs{1}{2}%        % 下から1番目は2段
+	% \setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{+5}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{6}{8}}%  % 拍子
+	\startextract%
+		\notes\ds\ibu{0}{k}{0}\islurd{1}{k}\qb{0}{k}\tbu{0}\qb{0}{k}\enotes
+		\notes\tslur{1}{k}\zqup{k}\raise-3\Interligne\ds\ibl{1}{f}{-2}\isluru{2}{f}\qb{1}{f}\tbl{1}\qb{1}{d}\enotes
+		\bar
+		\notes\tslur{2}{b}\zql{b}\ds\ibu{0}{k}{0}\islurd{1}{k}\qb{0}{k}\tbu{0}\zqb{0}{k}\raise-3\Interligne\ds\enotes
+		\notes\tslur{1}{k}\zqup{k}\raise-3\Interligne\ds\ibl{1}{d}{-2}\isluru{2}{d}\qb{1}{d}\tbl{1}\qb{1}{b}\enotes
+		\bar
+		\notes\tslur{2}{N}\zqlp{N}\ds\ibl{0}{i}{+1}\zq{i}\isluru{1}{k}\qb{0}{k}\tbl{0}\zq{j}\qb{0}{l}\enotes
+		\notes\ibl{0}{k}{-2}\zq{k}\qb0{m}\zq{j}\qb0{l}\tbl0\zq{i}\qb0{k}\enotes
+		\bar
+		\notes\ibu{0}{h}{0}\zq{h}\qb0{j}\zq{g}\qb0{i}\tbu0\zq{h}\qb0{j}\enotes
+		\notes\ibl{0}{i}{+2}\zq{i}\qb0{k}\zq{j}\qb0{l}\tbl0\zq{k}\tslur{1}{m}\qb0{m}\enotes
+		\bar
+		\Notes\zq{h}\qu{j}\ds\enotes
+	\zendextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{3-71}{第3楽章第71小節から}
+
+中間部は八分の六拍子でのDis音の連打から始まる (譜例\ref{3-71}). これは直前の第65小節から第70小節にかけて何度も強調されるB音から誘導されたものであるが,
+第83小節でホルンとトランペットが強い調子でFis音を連打するに至って, これが第1楽章のオルゲルクンプトの回想であることが明らかになる (第1楽章展開部の金管楽器の用法を思い出そう).
+ただ, 第73小節からの順次進行は節回しや3度を好む傾向という点ではむしろ第2楽章の主要主題を思わせる.
+
+続くトリオ風の音楽 (第87小節から) は不安定な和音進行が特徴的である.
+それまではロ調まわりで安定していたが, ここで基本動機xがバス声部に潜ることによって多彩な和声が導き出される.
+
 
 \section{第4楽章}

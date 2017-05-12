@@ -58,6 +58,15 @@
 \newcommand{\musicbegin}{\vspace*{5truemm}\begin{music}}
 \newcommand{\musicend}[2]{\end{music}\begin{center}{\small\useMycounter[\label{#1}]{#2}}\end{center}}
 
+% 小節番号表示用
+\newcommand{\shosetu}[1]{
+\startbarno=#1
+\systemnumbers
+\def\writebarno{\llap{\the\barno\barnoadd}}%
+\def\raisebarno{2\internote}%
+\def\shiftbarno{1.3\Interligne}%
+}
+
 % 文書データ
 \title{ブラームス: 交響曲第1番}
 \author{H.~S.}
