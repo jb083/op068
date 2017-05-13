@@ -1,0 +1,57 @@
+
+\section{第1楽章: Un poco sostenuto--Allegro}
+
+% 最初に軽く概観
+
+この楽章は大規模な序奏を持つソナタ形式で, 全体の構成を表\ref{structure of mov1}に示す
+(便宜上展開部を\ind{D}{1}, \ind{D}{2}, \ind{D}{3}に分けた).
+この表では再現部の入りを第343小節としたが, この点については後の詳細な議論を見よ.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|ccc|ccc|ccc|c}
+		序奏I & \multicolumn{3}{c|}{提示部E} & \multicolumn{3}{c|}{展開部D} &
+			\multicolumn{3}{c|}{再現部R} & コーダC \\ \hline
+		1--37 & \multicolumn{3}{c|}{38--188} & \multicolumn{3}{c|}{189--342} &
+			\multicolumn{3}{c|}{343--462} & 463--511 \\
+		& \ind{E}{1} & \ind{E}{2} & \ind{E}{c} & \ind{D}{1} & \ind{D}{2} & \ind{D}{3} &
+			\ind{R}{1} & \ind{R}{2} & \ind{R}{c} & \\ \cline{2-10}
+		& 38- & 130- & 159- & 189- & 225- & 293- & 343- & 403- & 430- & \\
+		c & c & Es & es & H--h--c & Ges--c & c--fis & c & C & c & f--C
+	\end{tabular}
+	\caption{第1楽章の構成}
+	\label{structure of mov1}
+\end{table}
+
+\musicbegin
+	\shosetu{42}
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{6}{8}}%  % 拍子は8分の6拍子
+	\startextract%
+		%(1)
+		\notes\lpz{C}\cu{C}\ds\ds|\ds\ds\ibsluru{1}{e}\cu{e}\enotes
+		\Notes\isluru{0}{c}\qlp{c}|\qu{g}\enotes
+		\notes|\tsslur{1}{g}\cl{l}\enotes
+		\bar
+		%(2)
+		\NOTes\tslur{0}{c}\qlp{c}|\isluru{1}{n}\qlp{n}\enotes
+		\Notes\sh{c}\qlp{c}|\tslur{1}{n}\ql{n}\enotes
+		\Notes|\na{l}\isluru{1}{l}\cl{l}\enotes
+		\bar
+		%(3)
+		\Notes\itieu{0}{d}\qlp{d}|\tslur{1}{n}\ql{n}\ds\enotes
+		\Notes\ibl{0}{d}{-3}\ttie{0}\qbp{0}{d}|\isluru{1}{o}\usf{o}\qlp{o}\enotes
+		\notes\nbbl{0}\na{c}\isluru{0}{c}\qb{0}{c}\na{b}\qb{0}{b}\tbl{0}\na{a}\qb{0}{a}|\enotes
+		\bar
+		%(4)
+		\notes\na{b}\tslur{0}{b}\upz{b}\cl{b}\ds|\tslur{1}{o}\ql{o}\enotes
+		\notes\ds|\upz{m}\cl{m}\enotes
+		\Notes\qp|\upz{k}\ql{k}\enotes
+		\notes\lpz{J}\cu{J}|\upz{j}\cl{j}\enotes
+		\bar
+		%(5)
+		\notes\lpz{G}\cu{G}\ds|\na{i}\upz{i}\cl{i}\ds\enotes
+	\zendextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{1-42}{第1楽章第42小節から}
