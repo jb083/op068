@@ -3,14 +3,31 @@
 
 \section{概観}
 
-\section{第1楽章}
+\section{第1楽章: Un poco sostenuto--Allegro}
+
+% 最初に軽く概観
+
+この楽章は大規模な序奏を持つソナタ形式で, 全体の構成を表\ref{structure of mov1}に示す
+(便宜上展開部を\ind{D}{1}, \ind{D}{2}, \ind{D}{3}に分けた).
+この表では再現部の入りを第343小節としたが, この点については後の詳細な議論を見よ.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|ccc|ccc|ccc|c}
+		序奏I & \multicolumn{3}{c|}{提示部E} & \multicolumn{3}{c|}{展開部D} &
+			\multicolumn{3}{c|}{再現部R} & コーダC \\ \hline
+		1--37 & \multicolumn{3}{c|}{38--188} & \multicolumn{3}{c|}{189--342} &
+			\multicolumn{3}{c|}{343--462} & 463--511 \\
+		& \ind{E}{1} & \ind{E}{2} & \ind{E}{c} & \ind{D}{1} & \ind{D}{2} & \ind{D}{3} &
+			\ind{R}{1} & \ind{R}{2} & \ind{R}{c} & \\ \cline{2-10}
+		& 38- & 130- & 159- & 189- & 225- & 293- & 343- & 403- & 430- & \\
+		c & c & Es & es & H--h--c & Ges--c & c--fis & c & C & c & f--C
+	\end{tabular}
+	\caption{第1楽章の構成}
+	\label{structure of mov1}
+\end{table}
 
 \musicbegin
-	\startbarno=42
-	\systemnumbers
-	\def\writebarno{\llap{\the\barno\barnoadd}}%
-	\def\raisebarno{2\internote}%
-	\def\shiftbarno{1.3\Interligne}%
+	\shosetu{42}
 	\def\nbinstruments{1}%   % パート数 2
 	\setstaffs{1}{2}%        % 下から1番目は2段
 	\setclef{1}{6000}%       % 下から1番目はへ音記号
@@ -29,7 +46,8 @@
 		\bar
 		%(3)
 		\Notes\itieu{0}{d}\qlp{d}|\tslur{1}{n}\ql{n}\ds\enotes
-		\Notes\ibl{0}{d}{-3}\ttie{0}\qbp{0}{d}\nbbl{0}\na{c}\isluru{0}{c}\qb{0}{c}\na{b}\qb{0}{b}\tbl{0}\na{a}\qb{0}{a}|\isluru{1}{o}\usf{o}\qlp{o}\enotes
+		\Notes\ibl{0}{d}{-3}\ttie{0}\qbp{0}{d}|\isluru{1}{o}\usf{o}\qlp{o}\enotes
+		\notes\nbbl{0}\na{c}\isluru{0}{c}\qb{0}{c}\na{b}\qb{0}{b}\tbl{0}\na{a}\qb{0}{a}|\enotes
 		\bar
 		%(4)
 		\notes\na{b}\tslur{0}{b}\upz{b}\cl{b}\ds|\tslur{1}{o}\ql{o}\enotes
@@ -161,7 +179,6 @@
 第2句は4小節単位の標準的な形を保っていることは注目に値する.
 また, 拡大部分である第29小節から第31小節にかけて, Vn2にこの曲の基本動機xがさりげなく登場している (譜例\ref{3-29}) ことにも注意したい.
 
-
 \musicbegin
 	\startbarno=29
 	\systemnumbers
@@ -174,20 +191,20 @@
 	\generalsignature{-4}%    % 調号は正の値のときシャープの数
 	% \generalmeter{\meterfrac{2}{4}}%  % 拍子
 	\startextract%
-	\Notes\isluru{1}{i}\itieu{2}{i}\ql{i}\enotes
+	\NOtes\isluru{1}{i}\itieu{2}{i}\ql{i}\enotes
 	\bar
-	\Notes\ttie{2}\ql{i}\na{i}\ql{i}\enotes
+	\NOtes\ttie{2}\ql{i}\na{i}\ql{i}\enotes
 	\bar
-	\Notes\ql{j}\ql{k}\enotes
+	\NOtes\ql{j}\ql{k}\enotes
 	\bar
-	\notes\ibl{0}{l}{-2}\na{k}\qb{0}{k}\curve 543\tslur{1}{j}\qb{0}{j}\isluru{1}{k}\upz{i}\qb{0}{i}\tbl{0}\tslur{1}{j}\upz{h}\qb{0}{h}\enotes
+	\Notes\ibl{0}{l}{-2}\na{k}\qb{0}{k}\curve 543\tslur{1}{j}\qb{0}{j}\isluru{1}{k}\upz{i}\qb{0}{i}\tbl{0}\tslur{1}{j}\upz{h}\qb{0}{h}\enotes
 	\endextract
 \musicend{3-29}{第3楽章第29小節2拍目からのVn2}
 
 第45小節でヘ短調に落ち込むと, クラリネット, 次いでフルートとオーボエに新しいリズムが出る (譜例\ref{3-45}) が,
 これは前半は第2句, 後半は第1句に基づく経過句である.
 
-\begin{music}
+\musicbegin
 	\startbarno=45
 	\systemnumbers
 	\def\writebarno{\llap{\the\barno\barnoadd}}%
@@ -240,7 +257,7 @@
 	% \endpiece
 \musicend{3-45}{第3楽章第45小節2拍目から}
 
-第62小節で変イ長調に戻ると第1句を再現するが, これはあっさりと流して遠隔調であるロ長調の中間部へと続く.
+減七和音を踏み台に第62小節で変イ長調に戻ると第1句を再現するが, これはあっさりと流して遠隔調であるロ長調の中間部へと続く.
 ここで第65小節からの木管楽器の動きが第4楽章の第58小節や第295小節を思い出させる, と言うと穿ちすぎだろうか.
 その解釈に立ってこの箇所を第3楽章第28小節からの木管および譜例\ref{3-29}に関する上の記述と比較すると,
 主部Aにおいて3回演奏されるこの主要主題は, 最初 (第1小節から) は含みのない形で提示されるが,
@@ -347,7 +364,7 @@
 \musicend{3-118}{第3楽章第118小節2拍目からのVn1}
 
 第126小節からの第2句は後半が大幅に拡大され, 主部にあったヘ短調の経過句を飲み込んで, 第144小節での第1句の再提示へと繋がる.
-一瞬だけ基本主題xを思い出す (第148小節) が, しかしその思いを振り切って変ニ短調に傾斜したコーダへ入る.
+ヴァイオリンが一瞬だけ基本主題xを思い出す (第148小節) が, しかしその思いを振り切って変ニ短調に傾斜したコーダへ入る.
 
 コーダは第154小節から第164小節というごく短いもので, 中間部Bの追憶となっている.
 ここではブラームスが好んで使用した二連符と三連符の交錯がくすんだニュアンスという絶妙な効果を発揮している.
