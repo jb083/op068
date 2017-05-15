@@ -3,6 +3,7 @@
 \musicbegin
 	\setmaxinstruments{20}
 	\setmaxgroups{8}
+	\setmaxslurs{99}
 	\def\nbinstruments{14}%   % パート数
 	\akkoladen{{1}{5}{7}{9}{10}{14}}
 	% \curlybrackets{1245}
@@ -10,13 +11,13 @@
 	% set clefs and names
 	\setclef{14}{0}\setname{14}{Fl\hspace{8truemm}}%
 	\setclef{13}{0}\setname{13}{Ob\hspace{8truemm}}%
-	\setclef{12}{0}\setname{12}{Cl in B\hspace{12truemm}}%
+	\setclef{12}{0}\setname{12}{Kl (B)\hspace{12truemm}}%
 	\setclef{11}{6}\setname{11}{Fg\hspace{8truemm}}%
-	\setclef{10}{6}\setname{10}{KFg\hspace{8truemm}}%
-	\setclef{9}{0}\setname{9}{Hr in C\hspace{12truemm}}%
-	\setclef{8}{0}\setname{8}{Hr in Es\hspace{12truemm}}%
-	\setclef{7}{0}\setname{7}{Tp in C\hspace{12truemm}}%
-	\setclef{6}{6}\setname{6}{Timp\hspace{8truemm}}%
+	\setclef{10}{6}\setname{10}{Kfg\hspace{8truemm}}%
+	\setclef{9}{0}\setname{9}{Hrn (C)\hspace{12truemm}}%
+	\setclef{8}{0}\setname{8}{Hrn (Es)\hspace{12truemm}}%
+	\setclef{7}{0}\setname{7}{Tr (C)\hspace{12truemm}}%
+	\setclef{6}{6}\setname{6}{Pk\hspace{8truemm}}%
 	\setclef{5}{0}\setname{5}{Vn1\hspace{7truemm}}%
 	\setclef{4}{0}\setname{4}{Vn2\hspace{8truemm}}%
 	\setclef{3}{3}\setname{3}{Va\hspace{8truemm}}%
@@ -37,66 +38,122 @@
 		\notes
 			\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}&
 			\islurd{2}{c}\itied{1}{c}\qup{c**}\ttie{1}\qu{c*}\sh{c}\itied{1}{c}\cu{c}&
-			&
-			&
+			\pt{c}\zq{c}\isluru{3}{j}\qlp{j**}\pt{g}\zq{g}\qlp{i**}&
+			\itieu{5}{j}\qlp{j**}\ttie{5}\ql{j*}\sh{j}\itieu{5}{j}\cl{j}&%Vn2
 			&%\isluru{4}{q}\itieu{3}{q}\qlp{q**}\ttie{3}\ql{q*}\sh{q}\itied{3}{q}\cl{q}&
 			\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}&
+			\pt{c}\itied{8}{c}\zq{c}\itieu{9}{j}\qup{j**}\ttie{8}\zq{c}\ttie{9}\cu{j}\ds\ds&%Tp
+			&
+			&
+			\ibu{0}{C}{0}\qb{0}{CC}\tbu{0}\qb{0}{C}\ibu{0}{C}{0}\qb{0}{CC}\tbu{0}\qb{0}{C}&
+			\pt{J}\zq{J}\isluru{21}{c}\qlp{c**}\pt{N}\zq{N}\qlp{b**}&%Fg
+			\pt{k}\zq{k}\isluru{22}{r}\qlp{r**}\pt{'h}\zq{h}\qlp{j**}&
+			\pt{j}\zq{j}\isluru{23}{q}\qlp{q**}\pt{'g}\zq{g}\qlp{i**}&
+			\pt{j}\zq{j}\isluru{24}{q}\qlp{q**}\pt{'g}\zq{g}\qlp{i**}
 		\enotes
 		\bar
 		%(2)
 		\notes
 			\trmu{J}\zhup{J}&
 			\ttie{1}\qu{c*}\itied{1}{d}\cu{d}&
-			&
-			&
+			\sh{f}\na{h}\pt{f}\zq{f}\qlp{h**}&
+			\ttie{5}\ql{j*}\itieu{5}{k}\cl{k}&%Vn2
 			&%\ttie{3}\ql{q*}\itied{3}{r}\cl{r}&
 			\trmu{J}\zhup{J}&
+			&%Tp
+			&
+			&
+			\trmu{C}\zhup{C}&
+			\sh{M}\na{a}\pt{M}\zq{M}\qlp{a**}&%Fg
+			\sh{'g}\na{i}\pt{g}\zq{g}\qlp{i**}&
+			\sh{'f}\na{h}\pt{f}\zq{f}\qlp{h**}&
+			\sh{'f}\na{h}\pt{f}\zq{f}\qlp{h**}
 		\enotes
 		\nnotes
 			&
 			\ibu{0}{d}{+3}\ttie{1}\qbp{0}{d*}\nbbu{0}\qb{0}{e}\qb{0}{f}\tbbu{0}\tbu{0}\tslur{2}{g}\itied{1}{g}\qb{0}{g}&
-			&
-			&
+			\na{f}\fl{h}\zql{f}\ql{h**}\zq{e}\tslur{3}{g}\cl{g}&
+			\ibl{5}{k}{+3}\ttie{5}\qbp{5}{k*}\nbbl{5}\qb{5}{l}\qb{5}{m}\tbbl{5}\tbl{5}\itieu{5}{n}\qb{5}{n}&%Vn2
 			&%\ibl{0}{r}{+3}\ttie{3}\qbp{0}{r*}\nbbl{0}\qb{0}{s}\qb{0}{t}\tbbl{0}\tbl{0}\tslur{4}{u}\itied{3}{u}\qb{0}{u}
 			&
+			&%Tp
+			&
+			&
+			&
+			\na{M}\fl{a}\zql{M}\ql{a**}\zq{L}\tslur{21}{N}\cl{N}&%Fg
+			\na{'g}\fl{i}\zql{g}\ql{i**}\zq{f}\tslur{22}{h}\cl{h}&
+			\na{'f}\fl{h}\zql{f}\ql{h**}\zq{e}\tslur{23}{g}\cl{g}&
+			\na{'f}\fl{h}\zql{f}\ql{h**}\zq{e}\tslur{24}{g}\cl{g}
 		\enotes
 		\bar
 		%(3)
 		\notes
 			\trmu{J}\zhup{J}&
-			\ttie{1}\islurd{2}{g}\qu{g*}\itied{1}{h}\cu{h}\ttie{1}\qu{h*}\na{h}\itied{1}{h}\qu{h}&
-			&
-			&
+			\ttie{1}\islurd{2}{g}\qu{g*}\itied{1}{h}\cu{h}\ttie{1}\qu{h*}\na{h}\itied{1}{h}\cu{h}&
+			\pt{d}\zq{d}\isluru{3}{f}\qlp{f**}\pt{c}\zq{c}\qlp{e**}&
+			\ttie{5}\ql{n*}\itieu{5}{o}\cl{o}\ttie{5}\ql{o*}\na{o}\itieu{5}{o}\cl{o}&%Vn2
 			&%\ttie{3}\isluru{4}{u}\ql{u*}\itieu{3}{v}\cl{v}\ttie{3}\ql{v*}\na{v}\itieu{3}{v}\ql{v}&
 			\trmu{J}\zhup{J}&
+			\centerpause&%Tp
+			&
+			&
+			\trmu{C}\zhup{C}&
+			\pt{K}\zq{K}\isluru{21}{M}\qlp{M**}\pt{J}\zq{J}\tslur{21}{L}\qlp{L**}&%Fg
+			\pt{'e}\zq{e}\isluru{22}{g}\qlp{g**}\pt{d}\zq{d}\tslur{22}{f}\qlp{f**}&
+			\pt{'d}\zq{d}\isluru{23}{f}\qlp{f**}\pt{c}\zq{c}\tslur{23}{e}\qlp{e**}&
+			\pt{'d}\zq{d}\isluru{24}{f}\qlp{f**}\pt{'c}\zq{c}\tslur{24}{e}\qlp{e**}
 		\enotes
 		\bar
 		%(4)
 		\notes
 			\trmu{J}\zhup{J}&
 			\ttie{1}\qu{h*}\itied{1}{i}\cu{i}\ttie{1}\qu{i*}\fl{h}\tslur{2}{h}\itied{1}{h}\qu{h}&
-			&
-			&
+			\pt{b}\zq{b}\qlp{d**}\ibl{3}{c}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{3}{f}\qb{3}{f}&
+			\ttie{5}\ql{o*}\itieu{5}{p}\cl{p}\ttie{5}\ql{p*}\fl{o}\itieu{5}{o}\cl{o}&%Vn2
 			&%\ttie{3}\ql{v*}\itieu{3}{w}\cl{w}\ttie{3}\ql{w*}\fl{v}\tslur{4}{v}\itied{3}{v}\ql{v}&
 			\trmu{J}\zhup{J}&
+			&%Tp
+			&
+			&
+			\trmu{C}\zhup{C}&
+			\pt{I}\zq{I}\isluru{21}{K}\qlp{K**}\ibl{3}{J}{+2}\zqb{3}{I}\qb{3}{K}\zqb{3}{J}\qb{3}{L}\tbl{3}\zqb{3}{K}\tslur{21}{M}\qb{3}{M}&%Fg
+			\pt{j}\zq{j}\isluru{22}{l}\qlp{l**}\ibu{3}{e}{+2}\zqb{3}{c}\qb{3}{e}\zqb{3}{d}\qb{3}{f}\tbu{3}\zqb{3}{e}\tbsluru{22}{l}\qb{3}{g}&
+			\pt{'b}\zq{b}\isluru{23}{d}\qlp{d**}\ibl{3}{c}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{23}{f}\qb{3}{f}&
+			\pt{''b}\zq{b}\isluru{24}{d}\qlp{d**}\ibl{3}{b}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{24}{f}\qb{3}{f}
 		\enotes
 		\bar
 		%(5)
 		\nnotes
 			\trmu{J}\zhup{J}&
 			\ibu{0}{g}{0}\ttie{1}\ibsluru{2}{h}\qbp{0}{h*}\nbbu{0}\qb{0}{g}\qb{0}{N}\tbbu{0}\tbu{0}\qb{0}{d}&
-			&
-			&
+			\na{b}\pt{b}\zq{b}\isluru{3}{d}\qlp{d**}&
+			\ibl{5}{h}{0}\ttie{5}\qbp{5}{o*}\nbbl{5}\qb{5}{n}\qb{5}{g}\tbbl{5}\tbl{5}\qb{5}{k}&%Vn2
 			&
 			\trmu{J}\zhup{J}&
+			&%Tp
+			&
+			&
+			\trmu{C}\zhup{C}&
+			\na{I}\pt{I}\zq{I}\isluru{21}{K}\qlp{K**}&%Fg
+			\sh{c}\pt{c}\zq{c}\isluru{22}{e}\qlp{e**}&
+			\na{'b}\pt{b}\zq{b}\isluru{23}{d}\qlp{d**}&
+			\na{''b}\pt{b}\zq{b}\isluru{24}{d}\qlp{d**}
 		\enotes
 		\notes
 			&
 			\qu{g*}\tbsluru{2}{f}\cu{f}&
+			\ibl{3}{c}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{3}{f}\qb{3}{f}&
+			\ql{n*}\ql{m}&%Vn2
+			&
+			&
+			&%Tp
 			&
 			&
 			&
-			&
+			\ibl{3}{J}{+2}\zqb{3}{I}\qb{3}{K}\zqb{3}{J}\qb{3}{M}\tbl{3}\zqb{3}{L}\tslur{21}{N}\qb{3}{N}&%Fg
+			\ibl{3}{d}{+2}\zqb{3}{c}\qb{3}{e}\zqb{3}{d}\qb{3}{f}\tbl{3}\zqb{3}{e}\tslur{22}{g}\qb{3}{g}&
+			\ibl{3}{'c}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{23}{f}\qb{3}{f}&
+			\ibl{3}{''c}{+2}\zqb{3}{b}\qb{3}{d}\zqb{3}{c}\qb{3}{e}\tbl{3}\zqb{3}{d}\tslur{24}{f}\qb{3}{f}
 		\enotes
 	\endextract % 頭にzをつけると最後に小節線を表示しない
 \musicend{1-1}{第1楽章冒頭}
