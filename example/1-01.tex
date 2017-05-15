@@ -1,0 +1,103 @@
+
+\clearpage
+\musicbegin
+	\setmaxinstruments{20}
+	\setmaxgroups{8}
+	\def\nbinstruments{14}%   % パート数
+	\akkoladen{{1}{5}{7}{9}{10}{14}}
+	% \curlybrackets{1245}
+	% \sepbarrules % 一旦すべての小節線を切り離す
+	% set clefs and names
+	\setclef{14}{0}\setname{14}{Fl\hspace{8truemm}}%
+	\setclef{13}{0}\setname{13}{Ob\hspace{8truemm}}%
+	\setclef{12}{0}\setname{12}{Cl in B\hspace{12truemm}}%
+	\setclef{11}{6}\setname{11}{Fg\hspace{8truemm}}%
+	\setclef{10}{6}\setname{10}{KFg\hspace{8truemm}}%
+	\setclef{9}{0}\setname{9}{Hr in C\hspace{12truemm}}%
+	\setclef{8}{0}\setname{8}{Hr in Es\hspace{12truemm}}%
+	\setclef{7}{0}\setname{7}{Tp in C\hspace{12truemm}}%
+	\setclef{6}{6}\setname{6}{Timp\hspace{8truemm}}%
+	\setclef{5}{0}\setname{5}{Vn1\hspace{7truemm}}%
+	\setclef{4}{0}\setname{4}{Vn2\hspace{8truemm}}%
+	\setclef{3}{3}\setname{3}{Va\hspace{8truemm}}%
+	\setclef{2}{6}\setname{2}{Vc\hspace{8truemm}}%
+	\setclef{1}{6}\setname{1}{Kb\hspace{8truemm}}%
+	% set chord
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	\setsign{12}{-1}
+	\setsign{9}{0}
+	\setsign{8}{0}
+	\setsign{7}{0}
+	\setsign{6}{0}
+	% set metre
+	\generalmeter{\meterfrac{6}{8}}%
+	\startextract%
+		%(1)
+		\setclef{2}{0}\zchangeclefs
+		\notes
+			\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}&
+			\islurd{2}{c}\itied{1}{c}\qup{c**}\ttie{1}\qu{c*}\sh{c}\itied{1}{c}\cu{c}&
+			&
+			&
+			&%\isluru{4}{q}\itieu{3}{q}\qlp{q**}\ttie{3}\ql{q*}\sh{q}\itied{3}{q}\cl{q}&
+			\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}\ibu{0}{J}{0}\qb{0}{JJ}\tbu{0}\qb{0}{J}&
+		\enotes
+		\bar
+		%(2)
+		\notes
+			\trmu{J}\zhup{J}&
+			\ttie{1}\qu{c*}\itied{1}{d}\cu{d}&
+			&
+			&
+			&%\ttie{3}\ql{q*}\itied{3}{r}\cl{r}&
+			\trmu{J}\zhup{J}&
+		\enotes
+		\nnotes
+			&
+			\ibu{0}{d}{+3}\ttie{1}\qbp{0}{d*}\nbbu{0}\qb{0}{e}\qb{0}{f}\tbbu{0}\tbu{0}\tslur{2}{g}\itied{1}{g}\qb{0}{g}&
+			&
+			&
+			&%\ibl{0}{r}{+3}\ttie{3}\qbp{0}{r*}\nbbl{0}\qb{0}{s}\qb{0}{t}\tbbl{0}\tbl{0}\tslur{4}{u}\itied{3}{u}\qb{0}{u}
+			&
+		\enotes
+		\bar
+		%(3)
+		\notes
+			\trmu{J}\zhup{J}&
+			\ttie{1}\islurd{2}{g}\qu{g*}\itied{1}{h}\cu{h}\ttie{1}\qu{h*}\na{h}\itied{1}{h}\qu{h}&
+			&
+			&
+			&%\ttie{3}\isluru{4}{u}\ql{u*}\itieu{3}{v}\cl{v}\ttie{3}\ql{v*}\na{v}\itieu{3}{v}\ql{v}&
+			\trmu{J}\zhup{J}&
+		\enotes
+		\bar
+		%(4)
+		\notes
+			\trmu{J}\zhup{J}&
+			\ttie{1}\qu{h*}\itied{1}{i}\cu{i}\ttie{1}\qu{i*}\fl{h}\tslur{2}{h}\itied{1}{h}\qu{h}&
+			&
+			&
+			&%\ttie{3}\ql{v*}\itieu{3}{w}\cl{w}\ttie{3}\ql{w*}\fl{v}\tslur{4}{v}\itied{3}{v}\ql{v}&
+			\trmu{J}\zhup{J}&
+		\enotes
+		\bar
+		%(5)
+		\nnotes
+			\trmu{J}\zhup{J}&
+			\ibu{0}{g}{0}\ttie{1}\ibsluru{2}{h}\qbp{0}{h*}\nbbu{0}\qb{0}{g}\qb{0}{N}\tbbu{0}\tbu{0}\qb{0}{d}&
+			&
+			&
+			&
+			\trmu{J}\zhup{J}&
+		\enotes
+		\notes
+			&
+			\qu{g*}\tbsluru{2}{f}\cu{f}&
+			&
+			&
+			&
+			&
+		\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{1-1}{第1楽章冒頭}
+\newpage
