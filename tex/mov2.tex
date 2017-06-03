@@ -1,2 +1,45 @@
 
 \section{第2楽章}
+
+\musicbegin
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{+4}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{3}{4}}%  % 拍子は8分の6拍子
+	\startextract%
+		%(1)
+		\Notes\ql{L}\qu{JH}|\zcharnote{y}{\hspace*{-8truemm}Andante sostenuto}\qu{g}\ql{hj}\enotes
+		\bar
+		%(2)
+		\notesp\ql{K}|\ibl{1}{i}{-2}\qbp{1}{i}\enotes
+		\nnotes|\tbbl{1}\tbl{1}\qb{1}{h}\enotes
+		\notes\ql{L}|\zqu{g}\raise-4\Interligne\ds\enotes
+		\notes|\ibl{0}{d}{0}\qb{0}{b}\enotes
+		\notes\qp|\zqb{0}{b}\qp\tbl{0}\qb{0}{b}\enotes
+		\bar
+		%(3)
+		\Notes\hu{J}|\sh{a}\pt{a}\zhl{a}\qu{f}\enotes
+		\notes|\ibu{1}{f}{0}\qb{1}{f}\qb{1}{f}\enotes
+		\notesp\na{J}\qu{J}|\qbp{1}{g}\enotes
+		\nnotes|\tbbu{1}\tbu{1}\qb{1}{e}\enotes
+		\bar
+		%(3)
+		\Notes\qup{I}|\qu{e}\enotes
+		\notes\cu{*}\ds|\cu{d}\ds\enotes
+		\Notes\qp|\zq{d}\zql{f}\qu{h}\enotes
+		\bar
+		%(4)
+		\Notes|\zq{d}\zql{f}\hu{h}\lna{d}\na{f}\zq{d}\ql{f}\na{c}\sh{h}\zq{c}\zql{e}\qu{h}\enotes
+		\def\atnextbar{\znotes\centerbar{\cpause}&\enotes}%
+		\bar
+		%(5)
+		\notesp\qu{F}|\sh{d}\zq{b}\zql{d}\ibu{1}{i}{-6}\qbp{1}{i}\enotes
+		\nnotes|\tbbu{1}\tbu{1}\qb{1}{f}\enotes
+		\notes\ibu{0}{F}{+5}\qb{0}{F}\butext{0}\qb{0}{I}\tbu{0}\qb{0}{K}|\zq{b}\zql{d}\qu{f}\enotes
+		\notes\ibl{0}{M}{0}\qb{0}{M}|\ds\enotes
+		\notes\bltext{0}\sh{L}\qb{0}{L}|   \cl{k}\enotes
+		% \nnotes|\cl{k}\enotes
+		\notes\tbl{0}\qb{0}{M}|\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{2-1}{第2楽章冒頭}
