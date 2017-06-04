@@ -9,37 +9,82 @@
 	\generalmeter{\meterfrac{3}{4}}%  % 拍子は8分の6拍子
 	\startextract%
 		%(1)
-		\Notes\ql{L}\qu{JH}|\zcharnote{y}{\hspace*{-8truemm}Andante sostenuto}\qu{g}\ql{hj}\enotes
+		\Notes\zcharnote{A}{\hspace*{-1truemm}{\footnotesize (Str)}}\isslurd{0}{K}\ql{L}\qu{J}\tslur{0}{H}\qu{H}|%
+			\zcharnote{t}{\hspace*{-8truemm}Andante sostenuto}\issluru{1}{g}\qu{g}\ql{h}\tslur{1}{j}\ql{j}\enotes
 		\bar
 		%(2)
-		\notesp\ql{K}|\ibl{1}{i}{-2}\qbp{1}{i}\enotes
-		\nnotes|\tbbl{1}\tbl{1}\qb{1}{h}\enotes
-		\notes\ql{L}|\zqu{g}\raise-4\Interligne\ds\enotes
+		\notesp\ql{K}|\ibu{1}{i}{-2}\islurd{1}{i}\qbp{1}{i}\enotes
+		\nnotes|\tbbu{1}\tbu{1}\tslur{1}{h}\qb{1}{h}\enotes
+		\notes\zcharnote{N}{\hspace*{1truemm}{\footnotesize (Hr)}}\ql{L}|\zqu{g}\raise-4\Interligne\ds\enotes
 		\notes|\ibl{0}{d}{0}\qb{0}{b}\enotes
 		\notes\qp|\zqb{0}{b}\qp\tbl{0}\qb{0}{b}\enotes
 		\bar
 		%(3)
-		\Notes\hu{J}|\sh{a}\pt{a}\zhl{a}\qu{f}\enotes
+		\Notes\hu{J}|\sh{a}\pt{a}\zhl{a}\ibsluru{1}{f}\qu{f}\enotes
 		\notes|\ibu{1}{f}{0}\qb{1}{f}\qb{1}{f}\enotes
 		\notesp\na{J}\qu{J}|\qbp{1}{g}\enotes
-		\nnotes|\tbbu{1}\tbu{1}\qb{1}{e}\enotes
+		\nnotes|\tbbu{1}\tbu{1}\tbsluru{1}{f}\qb{1}{e}\enotes
 		\bar
 		%(3)
-		\Notes\qup{I}|\qu{e}\enotes
-		\notes\cu{*}\ds|\cu{d}\ds\enotes
-		\Notes\qp|\zq{d}\zql{f}\qu{h}\enotes
+		\Notes\qup{I}|\islurd{1}{e}\qu{e}\enotes
+		\notes\cu{*}\ds|\tslur{1}{d}\cu{d}\ds\enotes
+		\Notes\qp|\ibslurd{4}{f}\itied{1}{d}\zq{d}\itieu{2}{f}\zql{f}\ibsluru{5}{h}\itieu{3}{h}\qu{h}\enotes
 		\bar
 		%(4)
-		\Notes|\zq{d}\zql{f}\hu{h}\lna{d}\na{f}\zq{d}\ql{f}\na{c}\sh{h}\zq{c}\zql{e}\qu{h}\enotes
+		\Notes|\ttie{1}\zq{d}\ttie{2}\zql{f}\ttie{3}\hu{h}%
+			\lna{d}\na{f}\zq{d}\ql{f}%
+			\na{c}\sh{h}\tbslurd{4}{e}\zq{c}\zql{e}\tbsluru{5}{h}\qu{h}\enotes
 		\def\atnextbar{\znotes\centerbar{\cpause}&\enotes}%
 		\bar
 		%(5)
-		\notesp\qu{F}|\sh{d}\zq{b}\zql{d}\ibu{1}{i}{-6}\qbp{1}{i}\enotes
-		\nnotes|\tbbu{1}\tbu{1}\qb{1}{f}\enotes
-		\notes\ibu{0}{F}{+5}\qb{0}{F}\butext{0}\qb{0}{I}\tbu{0}\qb{0}{K}|\zq{b}\zql{d}\qu{f}\enotes
+		\notesp\itied{0}{F}\qu{F}|\sh{d}\zq{b}\zql{d}\ibu{1}{i}{-11}\ibsluru{1}{i}\qbp{1}{i}\enotes
+		\nnotes|\tbbu{1}\tbu{1}\tbsluru{1}{f}\qb{1}{f}\enotes
+		\notes\ibu{0}{F}{+5}\ttie{0}\qb{0}{F}\butext{0}\qb{0}{I}\tbu{0}\qb{0}{K}|\zq{b}\zql{d}\qu{f}\enotes
 		\notes\ibl{0}{M}{0}\qb{0}{M}|\ds\enotes
-		\notes\bltext{0}\sh{L}\qb{0}{L}|   \cl{k}\enotes
-		% \nnotes|\cl{k}\enotes
+		\nnnotes\bltext{0}\sh{L}\qb{0}{L}|\enotes
+		\nnnotes|\cl{k}\enotes
 		\notes\tbl{0}\qb{0}{M}|\enotes
 	\endextract % 頭にzをつけると最後に小節線を表示しない
 \musicend{2-1}{第2楽章冒頭}
+
+\musicbegin
+	\shosetu{17}
+	\def\nbinstruments{1}%   % パート数
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{+4}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterfrac{2}{4}}%  % 拍子
+	\startextract%
+	\notes\zcharnote{p}{\hspace*{-1truemm}{\footnotesize (Ob)}}\ibl{1}{i}{+3}\isluru{1}{i}\qb{1}{i}\qb{1}{k}\tbl{1}\tslur{1}{l}\qb{1}{l}\enotes
+	\bar
+	%(18)
+	\NOtes\qlp{m}\enotes
+	\notes\ibl{1}{k}{-2}\isluru{1}{k}\qb{1}{k}\enotes
+	\notesp\qbp{1}{l}\enotes
+	\nnotes\tbbl{1}\tbl{1}\midslur2\tslur{1}{i}\qb{1}{i}\enotes
+	\bar
+	%(19)
+	\NOtes\qlp{i}\enotes
+	\notes\ibl{1}{i}{+3}\isluru{1}{i}\qb{1}{i}\qb{1}{k}\tbl{1}\tslur{1}{l}\qb{1}{l}\enotes
+	\bar
+	%(20)
+	\NOtes\qlp{m}\enotes
+	\notes\ibl{1}{k}{-2}\isluru{1}{k}\qb{1}{k}\enotes
+	\notesp\qbp{1}{l}\enotes
+	\nnotes\tbbl{1}\tbl{1}\midslur2\tslur{1}{i}\qb{1}{i}\enotes
+	\bar
+	%(21)
+	\NOtes\qlp{i}\enotes
+	\notes\ibl{1}{i}{+4}\qb{1}{i}\qb{1}{k}\tbl{1}\qb{1}{m}\enotes
+	\bar
+	%(22)
+	\Notes\zcharnote{H}{\hspace*{1truemm}{\footnotesize (Str)}}\isluru{0}{N}\zql{N}\qu{p}\enotes
+	\notes\ibu{1}{o}{-3}\zql{a}\islurd{1}{o}\qb{1}{o}\qb{1}{n}\tslur{0}{c}\zql{c}\qb{1}{m}\tbu{1}\tslur{1}{l}\qb{1}{l}\enotes
+	\bar
+	%(23)
+	\notes\ibl{0}{c}{-2}\pt{b}\isluru{0}{b}\zqb{0}{b}\ibu{1}{k}{-3}\islurd{1}{k}\qb{1}{k}\enotes
+	\nnnotes\qb{1}{j}\enotes
+	\nnotes\tbbl{0}\tbl{0}\tslur{0}{a}\qb{0}{a}\enotes
+	\notes\tbu{1}\zql{N}\tslur{1}{i}\qb{1}{i}\ibu{1}{l}{-5}\islurd{1}{l}\qb{1}{l}\zqb{1}{i}\raise-5\Interligne\qp\tbu{1}\tslur{1}{g}\qb{1}{g}\enotes
+	\endextract
+\musicend{2-17}{第2楽章第17小節から}
