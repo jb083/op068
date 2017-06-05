@@ -1,2 +1,99 @@
 
 \section{第4楽章: Adagio－Più Andante－Allegro non troppo, ma con brio}\label{sec: mov4}
+
+\musicbegin
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterC}%  % 拍子は8分の6拍子
+	\startextract%
+		%(1)
+		\Notes\zcharnote{d}{\hspace*{-1truemm}{\footnotesize (Str)}}\islurd{0}{J}\qu{J}\qu{I}\tslur{0}{H}\qu{H}|%
+			\zcharnote{t}{\hspace*{-8truemm}Adagio}\qp\qp\ibslurd{1}{j}\zql{j}\ibsluru{2}{'j}\qu{j}\enotes
+		\bar
+		%(2)
+		\Notes\itied{0}{G}\wh{G}|%
+			\zh{'b}\zql{e}\hu{n}\ql{d}\na{a}\zq{a}\zql{c}\sh{m}\qu{m}\na{b}\zq{N}\zql{b}\tbsluru{2}{n}\qu{n}\enotes
+		\bar
+		%(3)
+		\Notes\ttie{0}\wh{G**}\islurd{3}{N}\zq{d}\qu{N}|%
+			\fl{'a}\zq{a}\zql{c}\ibsluru{2}{l}\hup{l}%
+			\fl{b}\zq{N}\ql{b}\sh{M}\na{a}\zq{M}\ql{a}\na{b}\tbslurd{1}{b}\zq{N}\zql{b}\tbsluru{2}{k}\qu{k}\enotes
+		\bar
+		%(4)
+		\Notes\itied{0}{G}\zw{G}\zq{e}\qu{c}\zq{d}\fl{b}\qu{b}\na{a}\zq{c}\qu{a}\na{b}\zq{b}\qu{N}|%
+			\qp\ibsluru{1}{f}\sh{f}\qu{f}\qu{f}\tbsluru{1}{g}\qu{g}\enotes
+		\bar
+		%(5)
+		\Notes\ttie{0}\zw{G}\fl{a}\zq{c}\qu{a}\fl{b}\zq{b}\qu{N}\lsh{M}\na{a}\zq{a}\qu{M}\na{b}\tslur{3}{N}\zq{b}\qu{N}|%
+			\qp\ibsluru{1}{e}\qu{e}\qu{e}\tbsluru{1}{d}\qu{d}\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{4-1}{第4楽章冒頭}
+
+\musicbegin
+	\shosetu{30}
+	\def\nbinstruments{1}%   % パート数
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{0}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{2}{4}}%  % 拍子
+	\startextract%
+	%(30)
+	\Notes\zcharnote{N}{\hspace*{-1truemm}{\footnotesize (Hr)}}\zcharnote{t}{\hspace*{-8truemm}Più Andante}\hlp{l*}\enotes
+	\nnotes\ibbl{0}{k}{-2}\roff{\tbbl{0}}\qb{0}{k}\enotes
+	\notesp\tbl{0}\qbp{0}{j}\enotes
+	\bar
+	%(31)
+	\Notes\wh{g*}\enotes
+	\bar
+	%(32)
+	\Notes\hlp{k*}\ql{l}\enotes
+	\bar
+	%(33)
+	\Notes\wh{j*}\enotes
+	\bar
+	%(34)
+	\Notes\hlp{n*}\sh{m}\ql{m}\enotes
+	\bar
+	%(35)
+	\Notes\wh{k*}\enotes
+	\bar
+	%(36)
+	\Notes\wh{g*}\enotes
+	\bar
+	%(37)
+	\Notes\hlp{k*}\ql{l}\enotes
+	\bar
+	%(38)
+	\Notes\hl{j*}\enotes
+	\zendextract
+\musicend{4-30}{第4楽章第30小節から}
+
+\musicbegin
+	\shosetu{47}
+	\def\nbinstruments{1}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{0}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterC}%  % 拍子は8分の6拍子
+	\startextract%
+		%(1)
+		\Notes\zcharnote{A}{\hspace*{-1truemm}{\footnotesize (Tb, Fg)}}\hu{H*}\lpz{H}\islurd{0}{G}\qu{H}|%
+			\sh{c}\zh{c}\hu{h*}\lpz{c}\islurd{1}{b}\zq{c}\qu{e}\enotes
+		\notes\ds\lpz{H}\tslur{0}{G}\cu{H}|\ds\lpz{c}\tslur{1}{b}\zq{c}\cu{e}\enotes
+		\bar
+		%(2)
+		\Notes\hlp{K**}\fl{I}\lpz{I}\islurd{0}{G}\qu{I}|\zhp{a}\hup{f**}\lpz{d}\zq{d}\ibsluru{1}{f}\qu{f}\enotes
+		\bar
+		%(3)
+		\Notes\fl{E}\lpz{E}\qu{E}\fl{I}\lpz{I}\qu{I}\lpz{J}\qu{J}\lpz{C}\tslur{0}{B}\qu{C}|%
+			\fl{b}\lpz{b}\zq{b}\qu{g}\lpz{d}\zq{d}\qu{f}\lpz{N}\zq{N}\zq{c}\qu{f}\na{e}\lpz{N}\zq{N}\zq{c}\tbsluru{1}{e}\qu{e}\enotes
+		\bar
+		%(4)
+		\Notes\wh{F*}|\zw{a}\zw{c}\wh{f}\enotes
+		\bar
+		%(5)
+		\Notes\wh{G*}|\na{b}\zw{b}\wh{d}\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{4-47}{第4楽章第47小節から}
